@@ -24,8 +24,12 @@ header{
     align-items: center;
     list-style: none;
 }
-.navigation li:first-child{
-    border: 1px solid #000000;
+.navigation li{
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+}
+.navigation li:hover{
+    border: 1px solid black;
     border-radius: 8px;
     padding: 10px;
 }
