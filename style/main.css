@@ -45,6 +45,14 @@ main{
     padding: 22px 0;
     background: var(--gray);
     border-radius: 58px;
+    box-shadow: 5px 5px #898989, 9px 9px #BCB9B9;
+    transition: 0.3s;
+}
+
+.order-button:hover{
+    transform: translate(15px, 15px);
+    box-shadow: 0 0 transparent, 0 5px 10px #00000050;
+    transition: 0.5s;
 }
 .block-text {
     font-size: 14px;
