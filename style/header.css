@@ -6,6 +6,8 @@ header{
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
+    position: fixed;
+    box-shadow: 0 1px 10px var(--gray);
 }
 .header-left {
     display: flex;
