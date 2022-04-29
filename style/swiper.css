@@ -1,9 +1,9 @@
 .swiper-container {
     width: 600px;
     height: 300px;
+    display: none;
 }
 .swiper-wrapper {
-    display: flex;
 }
 .swiper-slide {
 }

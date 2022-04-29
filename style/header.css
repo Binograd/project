@@ -1,4 +1,30 @@
 header{
-    height: 60px;
-    background-color: var(--gray);
+    height: 76px;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+}
+.logo-text {
+    font-weight: 700;
+    width: 125px;
+}
+.header-right {
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navigation li:first-child{
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
 }
