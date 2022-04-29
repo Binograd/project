@@ -1,0 +1,17 @@
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+.swiper-wrapper {
+    display: flex;
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
