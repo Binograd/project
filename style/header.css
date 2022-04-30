@@ -8,13 +8,18 @@ header{
     font-size: 12px;
     position: fixed;
     border-bottom: 2px solid #808080;
+    padding: 0 30px;
     z-index: 100;
 }
 .header-left {
     display: flex;
     align-items: center;
 }
+.crest{
+    margin-right: 20px;
+}
 .logo {
+    margin-right: 10px;
 }
 .logo-text {
     font-weight: 700;
@@ -28,11 +33,20 @@ header{
     list-style: none;
 }
 .navigation li{
-    border: 1px solid var(--light-gray);
-    padding: 10px;
-}
-.navigation li:hover{
-    border: 1px solid black;
+    border: 2px solid var(--light-gray);
     border-radius: 8px;
     padding: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.navigation li a{
+    height: 14px;
+}
+.navigation li:hover{
+    transform: scale(1.1, 1.1);
+    border-color:black;
+}
+.navigation li a:active{
+    color: var(--gray);
+    border-color: var(--gray);
 }
