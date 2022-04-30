@@ -94,16 +94,16 @@ main{
     content: '';
     position: absolute;
     z-index: -1;
-    top: 35px;
+    top: 270px;
     left: -15px;
     width: 430px;
-    height: 280px;
+    height: 45px;
     background-color: var(--gray);
     transition: all 0.3s ease-in-out;
 }
 .block-image.first::before{
     width: 480px;
-    height: 295px;
+    top: 285px;
 }
 .block-image.right::before{
     left: 35px;
