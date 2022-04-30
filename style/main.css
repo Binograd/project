@@ -103,4 +103,27 @@ main{
 .block-image.right::before{
     left: 35px;
 }
-
+.block-video{
+    position: relative;
+    z-index: 1;
+}
+.block-video::before{
+    content: '';
+    position: absolute;
+    top: 115px;
+    left: -15px;
+    width: 430px;
+    height: 280px;
+    z-index: -1;
+    background-color: var(--gray);
+}
+.block-video::after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 265px;
+    width: 430px;
+    height: 280px;
+    z-index: -1;
+    background-color: var(--gray);
+}
