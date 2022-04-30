@@ -43,9 +43,13 @@ footer{
     padding:17px 0;
     font-size: 16px;    
     margin-top: 0;
+    box-shadow: none;
+    transition: 0.5s;
 }
 .order-button.footer:hover{
-    transform: translate(0, 0);
+    transform: translate(0, 0) scale(1.2, 1.2);
+    border-radius: 0;
+    transition: 0.5s ease-in-out;
 }
 .footer__left img{
     width: 120px;
