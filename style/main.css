@@ -78,10 +78,13 @@ main{
 }
 .block-image{
     position: relative;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
 }
 .block-image img{
     max-width: 450px;
     max-height: 300px;
+    z-index: 1;
 }
 .block-image.first img{
     max-width: 500px;
@@ -90,11 +93,13 @@ main{
 .block-image::before{
     content: '';
     position: absolute;
+    z-index: -1;
     top: 35px;
     left: -15px;
     width: 430px;
     height: 280px;
     background-color: var(--gray);
+    transition: all 0.3s ease-in-out;
 }
 .block-image.first::before{
     width: 480px;
@@ -103,6 +108,10 @@ main{
 .block-image.right::before{
     left: 35px;
 }
+.block-image:hover{
+    transform: scale(1.1, 1.1);
+}
+
 .block-video{
     position: relative;
     z-index: 1;
