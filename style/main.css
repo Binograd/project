@@ -38,26 +38,61 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 50px;
 }
 
-.block-text {
+.bottom-text {
     font-size: 14px;
     font-weight: 300;
-    width: 450px;
-    margin-right: 70px;
+    width: 470px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
 }
-.block-text.first{
+.bottom-text.first{
     width: 500px;
     margin: 0;
     margin-left: 50px;
 }
-.block-text.right{
+.bottom-text.right{
     margin-left: 50px;
     margin-right: 0;
 }
 .adress {
+    position: relative;
     font-size: 12px;
     font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.adress::before{
+    position: absolute;
+    content: '';
+    top: 1px;
+    left: -15px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/MapIcon.png') no-repeat right center;
+}
+.adress:hover{
+    text-decoration: underline;
+}
+.phone{
+    position: relative;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.phone::before{
+    position: absolute;
+    content: '';
+    left: -13px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/PhoneIcon.png') no-repeat right center;
+}
+.phone:hover{
+    text-decoration: underline;
 }
 .block-image{
     position: relative;
