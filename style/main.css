@@ -16,6 +16,9 @@ main{
 .content-block:nth-child(odd){
     background-color: white;
 }
+.content-block.video{
+    height: 500px;
+}
 .block-title {
     font-size: 20px;
     font-weight: 700;
@@ -73,6 +76,31 @@ main{
     font-size: 12px;
     font-weight: 300;
 }
-.block-image {
+.block-image{
+    position: relative;
+}
+.block-image img{
+    max-width: 450px;
+    max-height: 300px;
+}
+.block-image.first img{
+    max-width: 500px;
+    max-height: 315px;
+}
+.block-image::before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    width: 430px;
+    height: 280px;
+    background-color: var(--gray);
+}
+.block-image.first::before{
+    width: 480px;
+    height: 295px;
+}
+.block-image.right::before{
+    left: 35px;
 }
 
