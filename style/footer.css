@@ -48,7 +48,7 @@ footer{
 }
 .order-button.footer:hover{
     transform: translate(0, 0) scale(1.2, 1.2);
-    border-radius: 0;
+    border-radius: 2px;
     transition: 0.5s ease-in-out;
 }
 .footer__left img{
