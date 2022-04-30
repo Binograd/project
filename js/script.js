@@ -24,7 +24,7 @@ phones.forEach(phone => {
     let text = phone.textContent;
     phone.addEventListener('click', function () {
         if (phone.textContent === text) {
-            phone.textContent = `${text} (текст скопирован в буфер обмена)`;
+            phone.textContent = `${text} (номер скопирован в буфер обмена)`;
             setTimeout(function () {
                 phone.textContent = `${text}`;
             }, 2000);
