@@ -61,3 +61,8 @@ footer{
     width: 116px;
     height: 116px;
 }
+@media (max-width: 880px){
+    .order-button.footer:hover{
+        transform: scale(1,1);
+    }
+}

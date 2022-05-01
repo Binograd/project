@@ -1,9 +1,10 @@
-main{
+main {
     margin-top: 76px;
     width: 100%;
     height: 100%;
     max-width: 1200px;
 }
+
 .content-block {
     background-color: var(--light-gray);
     height: 100%;
@@ -15,17 +16,20 @@ main{
     padding: 25px 0 50px 0;
 }
 
-.content-block:nth-child(odd){
+.content-block:nth-child(odd) {
     background-color: white;
 }
-.content-block.video{
+
+.content-block.video {
     min-height: 500px;
 }
+
 .block-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
 }
+
 .bottom-block {
     width: 100%;
     display: flex;
@@ -33,7 +37,8 @@ main{
     justify-content: space-between;
     padding: 0 115px;
 }
-.bottom-block.first{
+
+.bottom-block.first {
     padding: 0 90px;
 }
 
@@ -45,15 +50,18 @@ main{
     display: flex;
     flex-direction: column;
 }
-.bottom-text.first{
+
+.bottom-text.first {
     max-width: 500px;
     margin: 0;
     margin-left: 50px;
 }
-.bottom-text.right{
+
+.bottom-text.right {
     margin-left: 50px;
     margin-right: 0;
 }
+
 .adress {
     position: relative;
     font-size: 12px;
@@ -61,7 +69,8 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.adress::before{
+
+.adress::before {
     position: absolute;
     content: '';
     top: 1px;
@@ -70,16 +79,19 @@ main{
     height: 12px;
     background: url('../img/MapIcon.png') no-repeat right center;
 }
-.adress:hover{
+
+.adress:hover {
     text-decoration: underline;
 }
-.phone{
+
+.phone {
     position: relative;
     font-size: 12px;
     cursor: pointer;
     font-weight: 300;
 }
-.phone::before{
+
+.phone::before {
     position: absolute;
     content: '';
     left: -13px;
@@ -87,24 +99,29 @@ main{
     height: 12px;
     background: url('../img/PhoneIcon.png') no-repeat right center;
 }
-.phone:hover{
+
+.phone:hover {
     text-decoration: underline;
 }
-.block-image{
+
+.block-image {
     position: relative;
     transition: all 0.4s ease-in-out;
     z-index: 1;
 }
-.block-image img{
+
+.block-image img {
     max-width: 450px;
     max-height: 300px;
     z-index: 1;
 }
-.block-image.first img{
+
+.block-image.first img {
     max-width: 500px;
     max-height: 315px;
 }
-.block-image::before{
+
+.block-image::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -115,22 +132,27 @@ main{
     background-color: var(--gray);
     transition: all 0.3s ease-in-out;
 }
-.block-image.first::before{
+
+.block-image.first::before {
     width: 480px;
     top: 285px;
 }
-.block-image.right::before{
+
+.block-image.right::before {
     left: 35px;
 }
-.block-image:hover{
+
+.block-image:hover {
     transform: scale(1.1, 1.1);
 }
 
-.block-video{
+.block-video {
     position: relative;
     z-index: 1;
+    width: 680px;
+    height: 380px;
 }
-.block-video::before{
+.block-video::before {
     content: '';
     position: absolute;
     top: 350px;
@@ -140,7 +162,8 @@ main{
     z-index: -1;
     background-color: var(--gray);
 }
-.block-video::after{
+
+.block-video::after {
     content: '';
     position: absolute;
     top: -15px;
@@ -150,52 +173,97 @@ main{
     z-index: -1;
     background-color: var(--gray);
 }
+
 @media (max-width: 1000px) {
     .bottom-block {
         padding: 0 50px;
     }
+
     .bottom-block.first {
         padding: 0 50px;
     }
-    .block-image.first img{
+
+    .block-image.first img {
         max-width: 400px;
         max-height: 270px;
     }
-    .block-image.first::before{
+
+    .block-image.first::before {
         top: 220px;
         width: 330px;
     }
-    .order-button{
+
+    .order-button {
         width: 250px;
     }
 }
+
 @media (max-width: 880px) {
     .block-image img {
         max-width: 350px;
         max-height: 235px;
     }
-    .block-image.first img{
+
+    .block-image.first img {
         max-width: 350px;
         max-height: 235px;
     }
-    .bottom-text{
+
+    .block-image:hover {
+        transform: scale(1, 1);
+    }
+
+    .bottom-text {
         margin-right: 20px;
     }
-    .bottom-text.first{
+
+    .bottom-text.first {
         margin: 0;
         margin-left: 20px;
     }
-    .bottom-text.right{
+
+    .bottom-text.right {
         margin-left: 20px;
         margin-right: 0;
     }
-    .block-image::before{
+
+    .block-image::before {
         top: 200px;
         width: 330px;
         left: -15px;
     }
-    .block-image.first::before{
+
+    .block-image.first::before {
         top: 190px;
         width: 330px;
+    }
+    .block-video{
+        width: 550px;
+        height: 310px;
+    }
+    .block-video::before {
+        top: 280px;
+        left: -15px;
+        width: 330px;
+    }
+    
+    .block-video::after {
+        top: -15px;
+        left: 265px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bottom-block {
+        flex-direction: column;
+    }
+
+    .block-image {
+        margin-bottom: 50px;
+    }
+
+    .block-image.right {
+        margin-top: 50px;
     }
 }

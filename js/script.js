@@ -1,8 +1,13 @@
-$('.main-gallery').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    autoPlay: true,
+$(document).ready(function () {
+    $('.main-gallery').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        autoPlay: true,
+    });
+    $('iframe[src*="youtu"]').each(function () {
+        $(this).wrap('<div class="block_video"></div>');
+    });
 });
 
 phones.forEach(phone => {
