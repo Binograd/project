@@ -291,7 +291,6 @@ main {
         margin-top: 0;
     }
 }
-
 @media (max-width: 440px){
     .content-block{
         padding: 15px 0 20px 0;

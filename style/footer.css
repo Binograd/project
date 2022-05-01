@@ -43,6 +43,7 @@ footer{
 .footer__center p{
     font-size: 13px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .order-button.footer {
     margin-top: 32px;
@@ -64,6 +65,11 @@ footer{
 @media (max-width: 880px){
     .order-button.footer:hover{
         transform: scale(1, 1);
+    }
+}
+@media (max-width: 700px){
+    .order-button.footer{
+        margin-top: 10px;
     }
 }
 @media (max-width: 440px){
