@@ -5,10 +5,9 @@ $(document).ready(function () {
         contain: true,
         autoPlay: true,
     });
-    $('iframe[src*="youtu"]').each(function () {
-        $(this).wrap('<div class="block_video"></div>');
-    });
 });
+
+const phones = document.querySelectorAll('.phone');
 
 phones.forEach(phone => {
     phone.addEventListener('click', function () {
