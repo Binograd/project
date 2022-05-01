@@ -7,6 +7,14 @@ $(document).ready(function () {
     });
 });
 
+const win_w = $(window).width();
+const wowEffects = document.querySelectorAll('.wow');
+if (win_w <= 440){
+    wowEffects.forEach(wowElement => {
+        $(wowElement).removeClass('wow');
+    });
+}
+
 const phones = document.querySelectorAll('.phone');
 
 phones.forEach(phone => {
