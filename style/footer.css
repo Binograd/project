@@ -66,3 +66,40 @@ footer{
         transform: scale(1, 1);
     }
 }
+@media (max-width: 440px){
+    footer{
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .contacts p,
+    .social li:last-child{
+        margin: 0;
+    }
+    .contacts{
+        margin-bottom: 15px;
+    }
+    .credits{
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .order-button.footer{
+        margin-top: 20px;
+        width: 125px;
+        font-size: 12px; 
+        padding: 12px 0;   
+    }
+    .social img{
+        width: 20px;
+        height: 20px;
+    }
+}
