@@ -1,7 +1,19 @@
 $(document).ready(function () {
     let mySwiper = new Swiper('.swiper-container', {
-        direction: 'vertical',
-        loop: true
+        direction: 'horizontal',
+        loop: true,
+        createElements: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
     })
 })
 

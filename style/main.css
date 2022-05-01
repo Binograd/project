@@ -34,12 +34,6 @@ main{
 .bottom-block.first{
     padding: 0 90px;
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-}
 
 .bottom-text {
     font-size: 14px;

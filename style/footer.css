@@ -13,36 +13,42 @@ footer{
     flex-direction: column;
     font-weight: 700;
 }
-.contacts p{
-    margin-top: 22px;
-    margin-bottom: 6px;
-}
 .social {
     display: flex;
     list-style: none;
     margin-bottom: 30px;
 }
+.contacts p{
+    margin-top: 22px;
+    margin-bottom: 6px;
+}
 .social li{
     margin-right: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.social li:hover{
+    transform: scale(1.15, 1.15);
 }
 .social img{
     width: 40px;
     height: 40px;
 }
 .footer__center {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer__center p{
-    margin-top: 16px;
+    font-size: 10px;
+    margin-bottom: 10px;
 }
 .order-button.footer {
+    margin-top: 32px;
     width: 230px;
     padding:17px 0;
     font-size: 16px;    
-    margin-top: 0;
     box-shadow: none;
     transition: 0.5s;
 }

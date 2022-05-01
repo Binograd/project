@@ -3,11 +3,14 @@
 .swiper-container {
     width: 600px;
     height: 300px;
-    display: none;
 }
 .swiper-wrapper {
 }
 .swiper-slide {
+}
+.swiper-slide__image {
+}
+.swiper-slide__image img{
 }
 .swiper-pagination {
 }
