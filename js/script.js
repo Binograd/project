@@ -1,23 +1,8 @@
-$(document).ready(function () {
-    let mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        createElements: true,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-    })
-})
-
-const phones = document.querySelectorAll('.phone');
+$('.main-gallery').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
 
 phones.forEach(phone => {
     phone.addEventListener('click', function () {

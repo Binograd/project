@@ -1,0 +1,37 @@
+.slider{
+    height: 100%;
+    max-width: 1200px;
+}
+.gallery {
+    background: #EEE;
+    height: 550px;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 550px;
+    margin-right: 60px;
+    background: url(../img/ContentImg/ContentImage-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flickity-page-dots{
+    bottom: 0 !important;
+}
+.flickity-page-dots .dot{
+    width: 20px !important;
+    height: 20px !important;
+    opacity: 0.5 !important;
+    background: var(--dark-gray) !important;
+}
+.flickity-page-dots .dot.is-selected{
+    opacity: 1 !important;
+}
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 550px;
+    font-size: 80px;
+    color: white;
+}

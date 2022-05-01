@@ -18,12 +18,12 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/swiper.css">
+    <link rel="stylesheet" href="./style/slider.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/animate.min.css">
+    <link rel="stylesheet" href="./style/flickity.css">
     <script src="./js/wow.min.js"></script>
     <script>
         if ('scrollRestoration' in history) {
@@ -54,28 +54,14 @@
         </nav>
     </header>
     <main>
-        <section class="swiper">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img class="swiper-slide__image" src="./img/ContentImg/ContentImage-5.webp"alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-slide__image" src="./img/ContentImg/ContentImage-3.webp"alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiper-slide__image" src="./img/ContentImg/ContentImage-4.webp"alt="">
-                    </div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+        <section class="slider wow animate__animated animate__fadeIn" data-wow-offset="50"
+        data-wow-duration="1.5s">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
             </div>
         </section>
         <article class="content-block first wow animate__animated animate__fadeIn" data-wow-offset="50"
@@ -83,7 +69,7 @@
             <h1 class="block-title first wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                 data-wow-delay="0.5s">Краткое описание проекта</h1>
             <article class="bottom-block first">
-                <div class="block-image first"><img loading="lazy" src="./img/ContentImg/ContentImage-1.webp" alt="">
+                <div class="block-image first"><img src="./img/ContentImg/ContentImage-1.webp" alt="">
                 </div>
                 <div class="bottom-text first">
                     <p class="block-text first">
@@ -249,7 +235,7 @@
             <img src="./img/ImageWall.png" alt="">
         </div>
     </footer>
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/jquery-3.6.0.slim.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
