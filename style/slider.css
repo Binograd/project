@@ -3,15 +3,16 @@
     max-width: 1200px;
 }
 .gallery {
-    background: #EEE;
+    background:white;
     height: 550px;
+    align-items: center;
 }
 
 .gallery-cell {
-    width: 66%;
+    width: 800px;
     height: 550px;
     margin-right: 60px;
-    background: url(../img/ContentImg/ContentImage-1.webp);
+    background: url(../img/SliderImg/SliderImage-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

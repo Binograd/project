@@ -1,7 +1,8 @@
 $('.main-gallery').flickity({
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    autoPlay: true,
 });
 
 phones.forEach(phone => {
