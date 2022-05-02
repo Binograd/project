@@ -175,6 +175,9 @@ main {
 }
 
 @media (max-width: 1000px) {
+    main {
+        margin-top: 110px;
+    }
     .bottom-block {
         padding: 0 50px;
     }
@@ -199,9 +202,6 @@ main {
 }
 
 @media (max-width: 880px) {
-    main {
-        margin-top: 110px;
-    }
     .block-image img {
         max-width: 350px;
         max-height: 235px;
