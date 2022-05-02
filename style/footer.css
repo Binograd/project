@@ -72,7 +72,7 @@ footer{
         margin-top: 10px;
     }
 }
-@media (max-width: 440px){
+@media (max-width: 600px){
     footer{
         height: fit-content;
         flex-direction: column;
@@ -100,10 +100,17 @@ footer{
     }
     .order-button.footer{
         margin-top: 20px;
-        width: 125px;
+        margin-bottom: 10px;
+        width: 150px;
         font-size: 12px; 
         padding: 12px 0;   
     }
+    .social img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 440px){
     .social img{
         width: 20px;
         height: 20px;
