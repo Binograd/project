@@ -45,28 +45,29 @@
         <nav class="header-right">
             <ul class="navigation">
                 <li><a href="#About-Project">О проекте</a></li>
-                <li><a href="#">Программы</a></li>
-                <li><a href="#">Фотогалерея</a></li>
+                <li><a href="#Programs">Программы</a></li>
+                <li><a href="#Gallery">Фотогалерея</a></li>
                 <li><a href="#Reviews">Отзывы</a></li>
-                <li><a href="#">Конкурс "Зов времени"</a></li>
+                <li><a href="#Programs">Конкурс "Зов времени"</a></li>
                 <li><a href="#Contacts">Контакты</a></li>
             </ul>
             <div class="mobile-menu">
                 <img class="menu-img" src="./img/MenuIcon.png" alt="">
                 <ul class="mobile-navigation">
                     <li><a href="#About-Project">О проекте</a></li>
-                    <li><a href="#">Программы</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#Programs">Программы</a></li>
+                    <li><a href="#Gallery">Фотогалерея</a></li>
                     <li><a href="#Reviews">Отзывы</a></li>
-                    <li><a href="#">Конкурс "Зов времени"</a></li>
+                    <li><a href="#Programs">Конкурс "Зов времени"</a></li>
                     <li><a href="#Contacts">Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="slider wow animate__animated animate__fadeIn" data-wow-offset="1" data-wow-duration="1.5s">
-            <h1 class="slider-title" >«Потягнем за Отечество»</h1>
+        <section class="slider wow animate__animated animate__fadeIn" id="Gallery" data-wow-offset="1"
+            data-wow-duration="1.5s">
+            <h1 class="slider-title">«Потягнем за Отечество»</h1>
             <div class="gallery js-flickity"
                 data-flickity-options='{ "wrapAround": true, "autoPlay": 4000, "pauseAutoPlayOnHover": true }'>
                 <div class="gallery-cell" id="el1"></div>
@@ -100,7 +101,7 @@
                 </div>
             </article>
         </article>
-        <article class="content-block wow animate__animated animate__fadeIn" data-wow-offset="1"
+        <article class="content-block wow animate__animated animate__fadeIn" id="Programs" data-wow-offset="1"
             data-wow-duration="1.5s">
             <h1 class="block-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                 data-wow-delay="0.3s">Конкурс «Зов времени»</h1>
@@ -235,9 +236,15 @@
         <article class="contacts" id="Contacts">
             <p>Контактная информация</p>
             <ul class="social">
-                <li><a href="#"><img src="./img/SocialImg/ImageVK.png" alt=""></a></li>
-                <li><a href="#"><img src="./img/SocialImg/ImageTelegram.png" alt=""></a></li>
-                <li><a href="#"><img src="./img/SocialImg/ImageSite.png" alt=""></a></li>
+                <li><a href="https://vk.com/pskovmuseum" target="_blank">
+                    <img src="./img/SocialImg/ImageVK.png"alt="vk">
+                </a></li>
+                <li><a href="#" target="_blank">
+                    <img src="./img/SocialImg/ImageTelegram.png" alt="telegram">
+                </a></li>
+                <li><a href="https://museumpskov.ru/" target="_blank">
+                    <img src="./img/SocialImg/ImageSite.png"alt="site">
+                </a></li>
             </ul>
         </article>
         <div class="footer__center">

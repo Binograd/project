@@ -23,6 +23,9 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+h1{
+    text-shadow: 0 5px 20px var(--gray);
+}
 a{
     text-decoration: none;
     color: black;
