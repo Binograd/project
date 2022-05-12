@@ -140,7 +140,7 @@ main {
 
 .content-block {
     background-color: var(--light-gray);
-    height: 100%;
+    height: calc(100vh - 76px);
     max-width: 1200px;
     display: flex;
     flex-direction: column;
