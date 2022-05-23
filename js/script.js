@@ -47,10 +47,3 @@ if (win_w > 480) {
     });
 }
 
-// const mobileMenuButton = document.querySelector('.menu-img');
-// if (mobileMenuButton){
-//     mobileMenuButton.addEventListener('click', function(){
-//         $('.mobile-navigation').css('display','inline-block');
-//     })
-// }
-
