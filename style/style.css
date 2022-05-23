@@ -94,7 +94,7 @@ header{
     transition: all 0.3s ease-in-out;
 }
 .navigation li a{
-    height: 14px;
+    font-size: 14px;
 }
 .navigation li:hover{
     transform: scale(1.1, 1.1);
@@ -161,6 +161,17 @@ main{
 .content-block:nth-child(odd) {
     background-color: white;
 }
+.content-block.contest{
+    min-height: 350px;
+}
+.content-block.contest .bottom-block{
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+.content-block.contest .bottom-block .phone{
+    margin-top: 20px;
+}
 
 .content-block.video {
     height: fit-content;
@@ -206,7 +217,7 @@ main{
 
 .adress {
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -228,7 +239,7 @@ main{
 
 .phone {
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
     font-weight: 300;
 }
@@ -518,6 +529,9 @@ footer{
 }
 
 @media (max-width: 880px) {
+    .navigation li a{
+        font-size: 12px;
+    }
     .block-image img {
         max-width: 350px;
         max-height: 235px;
@@ -710,7 +724,7 @@ footer{
         display: flex;
         width: 100%;
         margin: 10px 0;
-        padding: 0 20px;
+        padding: 0 12px;
         justify-content: space-between;
     }
     .contacts p,
