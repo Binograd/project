@@ -52,3 +52,4 @@ phones.forEach(phone => {
 //         $('.mobile-navigation').css('display','inline-block');
 //     })
 // }
+
