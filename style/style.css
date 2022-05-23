@@ -24,7 +24,7 @@ body{
     align-items: center;
 }
 h1{
-    text-shadow: 0 5px 20px var(--gray);
+    text-shadow: 0 5px 20px var(--light-gray);
 }
 a{
     text-decoration: none;
@@ -57,7 +57,7 @@ header{
     justify-content: space-between;
     font-size: 12px;
     position: fixed;
-    box-shadow: 0 5px 20px var(--gray);
+    box-shadow: 0 0 30px var(--gray);
     padding: 0 30px;
     z-index: 100;
 }
@@ -146,7 +146,7 @@ main{
 
 .content-block {
     background-color: var(--light-gray);
-    height: 100vh;
+    min-height: 700px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,6 @@ main{
 
 .bottom-text {
     font-size: 16px;
-    letter-spacing: 1px;
     font-weight: 400;
     max-width: 470px;
     margin-right: 50px;
@@ -355,6 +354,15 @@ main{
 .gallery-cell#el5{
     background: url(../img/SliderImg/SliderImage-5.webp);
 }
+.gallery-cell#el6{
+    background: url(../img/SliderImg/SliderImage-6.webp);
+}
+.gallery-cell#el7{
+    background: url(../img/SliderImg/SliderImage-7.webp);
+}
+.gallery-cell#el8{
+    background: url(../img/SliderImg/SliderImage-8.webp);
+}
 .flickity-viewport{
     height: 570px !important;
 }
@@ -522,6 +530,9 @@ footer{
         top: 190px;
         width: 330px;
     }
+    .content-block.video{
+        min-height: 500px;
+    }
     .block-video{
         width: 550px;
         height: 310px;
@@ -591,6 +602,9 @@ footer{
     }
 }
 @media (max-width: 600px){
+    .content-block.video{
+        min-height: 400px;
+    }
     .block-video{
         width: 430px;
         height: 240px;
@@ -698,6 +712,9 @@ footer{
     .phone{
         margin-left: 10px;
     }
+    .content-block.video{
+        min-height: 350px;
+    }
     .block-video{
         width: 370px;
         height: 210px;
@@ -762,6 +779,12 @@ footer{
     }
 }
 @media (max-width: 370px){
+    .content-block.video{
+        min-height: 250px;
+    }
+    .content-block.video h1{
+        margin-bottom: 15px;
+    }
     .block-video{
         width: 320px !important;
         height: 180px !important;
