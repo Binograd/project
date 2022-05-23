@@ -19,7 +19,7 @@ if (win_w <= 440) {
         $(wowElement).removeClass('animate__animated');
     });
 }
-if (win_w >= 1280) {
+if (win_w > 480) {
     const phones = document.querySelectorAll('.phone');
     phones.forEach(phone => {
         phone.addEventListener('click', function () {
