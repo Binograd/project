@@ -11,7 +11,7 @@ const win_w = $(window).width();
 const wowEffects = document.querySelectorAll('.wow');
 const footer = document.querySelector('#footer');
 if (win_w <= 600){
-    footer.innerHTML = '<a href="https://api-museum.kassy.ru/36/" target="_blank" class="order-button footer">Заказать программу</a><article class="contacts" id="Contacts"><p>Контактная информация</p><ul class="social"><li><a href="#"><img src="./img/SocialImg/ImageVK.png" alt=""></a></li><li><a href="#"><img src="./img/SocialImg/ImageTelegram.png" alt=""></a></li><li><a href="#"><img src="./img/SocialImg/ImageSite.png" alt=""></a></li></ul></article><p class="credits">© 2022 Псково-Изборский объединенный музей-заповедник</p>';
+    footer.innerHTML = '<a class="order-button footer" href="https://api-museum.kassy.ru/36/" target="_blank">Заказать программу</a><article class="contacts" id="Contacts"> <p>Контактная информация</p><div> <ul class="contact-us"> <li class="contact-phone"> <img alt="" src="./img/PhoneIconWhite.png"> <p>+7(8112) 29-22-60</p></li><li class="contact-adress"> <img alt="" src="./img/MapIconWhite.png"> <p>Адрес</p></li></ul> <ul class="social"> <li> <a href="#"><img alt="" src="./img/SocialImg/ImageVK.png"></a> </li><li> <a href="#"><img alt="" src="./img/SocialImg/ImageTelegram.png"></a> </li><li> <a href="#"><img alt="" src="./img/SocialImg/ImageSite.png"></a> </li></ul> </div></article><p class="credits">© 2022 Псково-Изборский объединенный музей-заповедник</p>';
 }
 if (win_w <= 440) {
     wowEffects.forEach(wowElement => {

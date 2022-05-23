@@ -30,6 +30,9 @@ a{
     text-decoration: none;
     color: black;
 }
+ul{
+    list-style: none;
+}
 .order-button{
     width: 300px;
     color: white;
@@ -388,7 +391,7 @@ main{
     color: white;
 }
 footer{
-    height: 120px;
+    height: 165px;
     background-color: var(--dark-gray);
     color: white;
     width: 100%;
@@ -405,10 +408,10 @@ footer{
 .social {
     display: flex;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 .contacts p{
-    margin-top: 22px;
+    margin-top: 10px;
     margin-bottom: 6px;
 }
 .social li{
@@ -421,6 +424,24 @@ footer{
 .social img{
     width: 40px;
     height: 40px;
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+.contact-us li{
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.contact-us img{
+    height: 15px;
+    width: 15px;
+}
+.contact-us li p{
+    margin: 0;
+    margin-left: 6px;
 }
 .footer__center {
     height: 100%;
@@ -435,7 +456,7 @@ footer{
     text-align: center;
 }
 .order-button.footer {
-    margin-top: 32px;
+    margin-top: 45px;
     width: 230px;
     padding:17px 0;
     font-size: 16px;    
@@ -448,10 +469,15 @@ footer{
     transition: 0.5s ease-in-out;
 }
 .footer__left img{
-    width: 116px;
-    height: 116px;
+    width: 162px;
+    height: 162px;
 }
 @media (max-width: 1000px) {
+    .order-button:hover{
+        transform: none;
+        box-shadow: 0 0 transparent, 0 5px 10px #00000050;
+        transition: 0.5s;
+    }
     main {
         margin-top: 110px;
     }
@@ -602,6 +628,11 @@ footer{
     }
 }
 @media (max-width: 600px){
+    .order-button.footer:hover{
+        transform: none;
+        border-radius: 2px;
+        transition: 0.5s ease-in-out;
+    }
     .content-block.video{
         min-height: 400px;
     }
@@ -675,12 +706,21 @@ footer{
         margin-top: 5px;
         margin-bottom: 0;
     }
+    .contacts div{
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
     .contacts p,
     .social li:last-child{
         margin: 0;
     }
     .contacts{
         margin-bottom: 15px;
+        align-items: center;
+        width: 320px;
     }
     .credits{
         width: 100%;
