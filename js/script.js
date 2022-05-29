@@ -1,13 +1,11 @@
-$(document).ready(function () {
-    $('.main-gallery').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true,
-        autoPlay: true,
-    });
+var flkty = new Flickity('.gallery', {
+    wrapAround: true,
+    autoPlay: 4000,
+    pauseAutoPlayOnHover: true,
+    lazyLoad: true,
 });
 
-const win_w = $(window).width();
+const win_w = document.documentElement.clientWidth;
 const wowEffects = document.querySelectorAll('.wow');
 const footer = document.querySelector('#footer');
 if (win_w <= 600) {
@@ -15,8 +13,8 @@ if (win_w <= 600) {
 }
 if (win_w <= 440) {
     wowEffects.forEach(wowElement => {
-        $(wowElement).removeClass('wow');
-        $(wowElement).removeClass('animate__animated');
+        wowElement.classList.remove('wow');
+        wowElement.classList.remove('animate__animated');
     });
 }
 if (win_w > 480) {
@@ -25,10 +23,6 @@ if (win_w > 480) {
         phone.addEventListener('click', function () {
             const el = document.createElement('textarea');
             el.value = phone.textContent;
-            el.setAttribute('readonly', '');
-            el.style.position = 'absolute';
-            el.style.left = '-9999px';
-            document.body.appendChild(el);
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
